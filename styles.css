@@ -130,7 +130,6 @@ ul .icon:hover {
 ul {
   position: fixed;
   z-index: 1;
-  top: 0;
   bottom: 0;
   left: 0;
   margin: auto;
@@ -138,6 +137,23 @@ ul {
   width: 10%;
   padding: 0;
   text-align: center;
+}
+#menu {
+  top: 0;
+}
+
+#menus.blue {
+  top: 0;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 9%;
+  z-index: 1;
+  left: 0;
+  margin: auto;
+  background-color: rgb(24, 24, 24);
+  object-fit: contain;
 }
 
 #menu .icon {
@@ -810,6 +826,34 @@ h3 {
   background-image: url("images/netflix-clone.jpg");
 }
 
+.property-image5 {
+  height: 16em;
+  width: 10em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("images/gpf_donate.jpg");
+}
+
+.property-image6 {
+  height: 16em;
+  width: 10em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("images/sanujob.jpg");
+}
+
 /* Bottom Card Section */
 .property-description {
   background-color: #fafafc;
@@ -835,16 +879,16 @@ h3 {
 /* ---------------------------------------------- page 5 ------------------------------------------------------------- */
 .mailbox {
   position: fixed;
-  margin-left: 150px;
-  width: 250px;
-  height: 420px;
+  margin-left: 11%;
+  width: 15%;
+  height: 38%;
   bottom: 0%;
 }
 
 .curve {
   position: fixed;
   height: 840px;
-  width: 440px;
+  width: 20%;
   padding: 0;
   margin: 0;
   bottom: 0%;
@@ -1002,6 +1046,18 @@ h3 {
     align-content: center;
     top: 40%;
   }
+
+  #t2:target #dos,
+  #t3:target #tres,
+  #t4:target #cuatro,
+  #t5:target #cinco {
+    transform: scale(0.6) !important;
+    -webkit-transform: scale(0.6) !important;
+    -moz-transform: scale(0.6) !important;
+    -o-transform: scale(0.6) !important;
+    color: #03bcf4;
+  }
+
   .sub {
     top: 45%;
     width: 100%;
@@ -1014,16 +1070,38 @@ h3 {
     width: 60%;
     left: 25%;
   }
+
+  ul {
+    display: flex;
+    align-items: flex-start;
+    object-fit: contain;
+    margin: 0;
+    height: 0;
+    width: 0;
+    padding: 0;
+  }
+
   #menu {
     display: flex;
-    bottom: 65%;
-    justify-content: space-between;
-    padding: 20px;
-    left: 20%;
+    margin-top: 0%;
+    height: max-content;
+    object-fit: contain;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    justify-content: space-evenly;
+    padding: 0;
+    left: 0;
   }
-  .icon {
-    padding-right: 40px;
+
+  #menu .icon {
+    padding: 0;
+    position: fixed;
+    object-fit: contain;
+    top: 0%;
+    bottom: 100%;
   }
+
   #t2:target #p2,
   #t3:target #p3,
   #t4:target #p4,
@@ -1097,8 +1175,8 @@ h3 {
     display: none;
   }
   #p5 {
-    background-color: #7ee8fa;
-    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    background-color: #f39f86;
+    background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
   }
 
   h2 {
@@ -1136,13 +1214,6 @@ h3 {
   }
   .sub {
     left: 14%;
-  }
-  #menu {
-    left: 12%;
-  }
-  .icon {
-    padding-right: 40px;
-    font-size: 1.75rem;
   }
 
   .middle {
