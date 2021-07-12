@@ -1086,7 +1086,7 @@ h3 {
     margin-top: 0%;
     height: max-content;
     object-fit: contain;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
     top: 0;
     justify-content: space-evenly;
